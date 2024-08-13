@@ -1,0 +1,29 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient  */
+.gradient-background {
+  background: linear-gradient(135deg,#77E4C8 20%, #478CCF 40%, #36C2CE 60%,  #4535C1 80%);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
